@@ -12,7 +12,7 @@
 <script src="https://cdn.bootcss.com/Mock.js/1.0.1-beta3/mock-min.js"></script>
 <script>
   let url = '//rap2api.taobao.org/app/mock/115053/example/1540425115484'
-  axios.post(url).then(res => {
+  axios.get(url).then(res => {
     console.log('响应数据： ', res)
   }).catch(err => {
     let data = Mock.mock({
